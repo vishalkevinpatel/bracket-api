@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bracket_id: 1
+  correct: false
+  game_id: 1
+  user_id: 1
+  pick_team: one
+
+two:
+  bracket_id: 1
+  correct: false
+  game_id: 1
+  user_id: 1
+  pick_team: two
