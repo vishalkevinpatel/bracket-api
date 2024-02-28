@@ -10,16 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_26_202146) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_28_013528) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "brackets", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
-    t.integer "points"
+    t.integer "total_points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "round1"
+    t.integer "round2"
+    t.integer "round3"
+    t.integer "round4"
+    t.integer "round5"
+    t.integer "round6"
+    t.integer "round0"
   end
 
   create_table "games", force: :cascade do |t|
