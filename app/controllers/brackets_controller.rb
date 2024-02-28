@@ -6,7 +6,7 @@ class BracketsController < ApplicationController
 
   def create
     @bracket = Bracket.create(
-      user_id: "1",
+      user_id: current_user.id,
       name: params["name"],
     )
     render :show
@@ -40,13 +40,7 @@ class BracketsController < ApplicationController
 
   def destroy
     @bracket = Bracket.find_by(id: params[:id])
-    if @bracket.user_id == current_user.id
-      @bracket.update(
-        user_id: 1,
-      )
-      render json: { message: "Bracket has been deleted 😈" }
-    else
-      render json: { message: "you cannont delete this bracket" }
-    end
+    @bracket.destroy
+    render json: { message: "Bracket has been deleted 😈" }
   end
 end

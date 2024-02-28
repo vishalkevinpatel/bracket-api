@@ -15,4 +15,22 @@ Rails.application.routes.draw do
   get "/brackets/:id" => "brackets#show"
   patch "/brackets/:id" => "brackets#update"
   delete "/brackets/:id" => "brackets#destroy"
+
+  get "/teams" => "teams#index"
+  post "/teams" => "teams#create"
+  get "/teams/:id" => "teams#show"
+  patch "/teams/:id" => "teams#update"
+  delete "/teams/:id" => "teams#destroy"
+
+  get "/games" => "games#index"
+  post "/games" => "games#create"
+  get "/games/:id" => "games#show"
+  patch "/games/:id" => "games#update"
+  delete "/games/:id" => "games#destroy"
+
+  get "/matches" => "matches#index"
+  post "/matches" => "matches#create"
+  get "/matches/:id" => "matches#show"
+  patch "/matches/:id" => "matches#update"
+  delete "/matches/:id" => "matches#destroy"
 end
