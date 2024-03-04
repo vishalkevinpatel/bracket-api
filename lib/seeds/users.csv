@@ -1,0 +1,4 @@
+username,password_digest,email
+perfect,pass,perfect@example.com
+emily,pass,emily@example.com
+alex,pass,alex@example.com
