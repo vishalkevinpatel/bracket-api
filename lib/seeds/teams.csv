@@ -1,0 +1,69 @@
+name,seed,region,superseed
+Alabama,1,South,1
+A&M-Corpus Christi,16,South,65
+Maryland,8,South,31
+W. Virginia,9,South,34
+San Diego St.,5,South,17
+Charleston,12,South,47
+Virginia,4,South,16
+Furman,13,South,53
+Creighton,6,South,22
+NC State,11,South,41
+Baylor,3,South,9
+UCSB,14,South,56
+Missouri,7,South,27
+Utah St.,10,South,40
+Arizona,2,South,7
+Princeton,15,South,61
+Purdue,1,East,4
+FDU,16,East,68
+Memphis,8,East,29
+FAU,9,East,33
+Duke,5,East,18
+Oral Roberts,12,East,48
+Tennessee,4,East,14
+Louisiana,13,East,54
+Kentucky,6,East,23
+Providence,11,East,42
+Kansas St.,3,East,11
+Montana St.,14,East,58
+Michigan St.,7,East,26
+USC,10,East,39
+Marquette,2,East,8
+Vermont,15,East,59
+Houston,1,Midwest,2
+N. Kentucky,16,Midwest,63
+Iowa,8,Midwest,32
+Auburn,9,Midwest,35
+Miami,5,Midwest,20
+Drake,12,Midwest,49
+Indiana,4,Midwest,15
+Kent St.,13,Midwest,51
+Iowa St.,6,Midwest,21
+Pittsburgh,11,Midwest,44
+Xavier,3,Midwest,12
+Kennesaw St.,14,Midwest,55
+Texas A&M,7,Midwest,25
+Penn St.,10,Midwest,38
+Texas,2,Midwest,6
+Colgate,5,Midwest,60
+Kansas,1,West,3
+Howard,16,West,64
+Arkansas,8,West,30
+Illinois,9,West,36
+St. Mary's,5,West,19
+VCU,12,West,50
+U Conn,4,West,13
+Iona,13,West,52
+TCU,6,West,24
+Arizona St.,11,West,45
+Gonzaga,3,West,10
+Grand Canyon,14,West,57
+Northwestern,7,West,28
+Boise St.,10,West,37
+UCLA,2,West,5
+UNC-Ash.,15,West,62
+Southeast Mo. St.,16,South,67
+Texas Southern,16,East,66
+Nevada,11,West,46
+Mississippi St.,11,Midwest,43
