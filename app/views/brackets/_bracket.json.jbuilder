@@ -1,6 +1,6 @@
 json.id bracket.id
 json.name bracket.name
-json.user_id bracket.user_id
+json.user_id bracket.user&.username
 json.total_points bracket.total_points
 json.round1 bracket.round1
 json.round2 bracket.round2
