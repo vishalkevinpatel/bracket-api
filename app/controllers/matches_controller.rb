@@ -42,6 +42,6 @@ class MatchesController < ApplicationController
 
   def filter_by_bracket
     @matches = Match.where(bracket_id: params[:bracket_id])
-    render json: @matches
+    render :index
   end
 end
