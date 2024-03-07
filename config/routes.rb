@@ -35,7 +35,7 @@ Rails.application.routes.draw do
   delete "/matches/:id" => "matches#destroy"
 
   # filtered matched by bracket_id
-  get "filter_by_bracket/:bracket_id" => "matches#filter_by_bracket"
+  get "filter_by_bracket/:bracket_id", to: "matches#filter_by_bracket", as: "filter_by_bracket"
 
   get "/groups" => "groups#index"
   post "/groups" => "groups#create"
