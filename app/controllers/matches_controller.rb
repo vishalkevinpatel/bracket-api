@@ -39,4 +39,9 @@ class MatchesController < ApplicationController
     @match.destroy
     render json: { message: "match has been deleted 😈" }
   end
+
+  def filter_by_bracket
+    @matches = Match.where(bracket_id: params[:bracket_id])
+    render json: @matches
+  end
 end
