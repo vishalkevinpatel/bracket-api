@@ -33,4 +33,16 @@ Rails.application.routes.draw do
   get "/matches/:id" => "matches#show"
   patch "/matches/:id" => "matches#update"
   delete "/matches/:id" => "matches#destroy"
+
+  get "/groups" => "groups#index"
+  post "/groups" => "groups#create"
+  get "/groups/:id" => "groups#show"
+  patch "/groups/:id" => "groups#update"
+  delete "/groups/:id" => "groups#destroy"
+
+  get "/group_brackets" => "group_brackets#index"
+  post "/group_brackets" => "group_brackets#create"
+  get "/group_brackets/:id" => "group_brackets#show"
+  patch "/group_brackets/:id" => "group_brackets#update"
+  delete "/group_brackets/:id" => "group_brackets#destroy"
 end

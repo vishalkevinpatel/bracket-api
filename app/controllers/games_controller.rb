@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   def index
-    @games = Team.all
+    @games = Game.all
     render :index
   end
 

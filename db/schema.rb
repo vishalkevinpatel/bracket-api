@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_28_013528) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_06_230122) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -39,6 +39,19 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_28_013528) do
     t.index ["away_team_id"], name: "index_games_on_away_team_id"
     t.index ["home_team_id"], name: "index_games_on_home_team_id"
     t.index ["winner_team_id"], name: "index_games_on_winner_team_id"
+  end
+
+  create_table "group_brackets", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "group_id", null: false
+    t.bigint "bracket_id", null: false
+    t.index ["bracket_id"], name: "index_group_brackets_on_bracket_id"
+    t.index ["group_id"], name: "index_group_brackets_on_group_id"
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.string "name"
   end
 
   create_table "matches", force: :cascade do |t|
@@ -72,6 +85,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_28_013528) do
   add_foreign_key "games", "teams", column: "away_team_id"
   add_foreign_key "games", "teams", column: "home_team_id"
   add_foreign_key "games", "teams", column: "winner_team_id"
+  add_foreign_key "group_brackets", "brackets"
+  add_foreign_key "group_brackets", "groups"
   add_foreign_key "matches", "teams", column: "pick_team_id"
   add_foreign_key "matches", "teams", column: "winner_team_id"
 end
