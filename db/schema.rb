@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_13_005500) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_28_012957) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -73,6 +73,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_13_005500) do
     t.integer "superseed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "char6"
   end
 
   create_table "users", force: :cascade do |t|

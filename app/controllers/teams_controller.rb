@@ -10,6 +10,7 @@ class TeamsController < ApplicationController
       seed: params["seed"],
       region: params["region"],
       superseed: params["superseed"],
+      char6: params["char6"],
     )
     render :show
   end
@@ -26,6 +27,7 @@ class TeamsController < ApplicationController
       seed: params[:seed] || @team.seed,
       region: params[:region] || @team.region,
       superseed: params[:superseed] || @team.superseed,
+      char6: params[:char6] || @team.char6,
     )
     #happy path
     if @team.valid?

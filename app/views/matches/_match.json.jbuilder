@@ -1,9 +1,14 @@
 json.id match.id
 json.bracket_id match.bracket_id
+json.bracket_name match.bracket&.name
 json.game_id match.game_id
+json.game_matrix match.game&.matrix
 json.home_team match.game.home_team&.name
+json.home_team_id match.game.home_team_id
 json.away_team match.game.away_team&.name
-json.pick_team_id match.pick_team&.name
+json.away_team_id match.game.away_team_id
+json.pick_team_name match.pick_team&.name
+json.pick_team_id match.pick_team_id
 json.winner_team_id match.winner_team&.name
 json.created_at match.created_at
 json.updated_at match.updated_at
